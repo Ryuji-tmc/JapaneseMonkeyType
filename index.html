@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Japanese Monkey Type</title>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- メニュー画面 -->
+  <div id="menu-container">
+    <img src="https://blog-imgs-149.fc2.com/m/a/p/maplab/Egypt_animated_1.gif" alt="Egypt" class="Egypt" id="Egypt" width="400" height="400">
+    <h1>Welcome to Japanese Monkey Type</h1>
+    <button class="button-design" id="button2" onclick="movePage()">スタート</button>
+  </div>
+
+  <!-- ゲームプレイ画面 -->
+  <div id="game-container" style="display: none;">
+    <p id="welcome-message">従業員番号を入力してください</p>
+    <input type="text" id="input-tmc" placeholder="従業員番号を入力してください..." size="50">
+    <img src="https://loosedrawing.com/assets/illustrations/png/1392.png" alt="Girl in a PC" class="pc-image" id="pcWoman">
+    <img src="https://loosedrawing.com/assets/illustrations/png/1391.png" alt="Boy in a PC" class="pc-image" id="pcMan">
+    <h1>タイピングゲーム</h1>
+    <p id="text-display"></p>
+    <label id="label-type"></label>
+    <br>
+    <div id="input-display" class="input-display-placeholder">ここにタイピング文が表示されます...</div>
+    <input type="text" id="input-field">
+    <button href="#" class="button-design" id="button1" onclick="endGame()">戻る</button>
+  </div>
+  <div id="results"></div>
+
+  <!-- ポップアップ画面 -->
+  <div id="overlay">
+    <div id="popup">
+      <h2>お疲れ様でした！</h2>
+      <p id="popup-message">Your WPM: <span id="popup-wpm"></span></p>
+      <p id="popup-message">Your ACC: <span id="popup-acc"></span></p>
+      <button id="close-btn" onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
