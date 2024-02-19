@@ -3,11 +3,11 @@
 
 //ゲームに使用する例文を配列に格納
 const texts = [
-  "The quick brown fox jumps over the lazy dog",
-  "Programming is fun and challenging",
-  "Practice makes perfect",
-  "Type as fast as you can!",
-  "Web development is an exciting field"
+  "The DIG course is a lot of fun!",
+  "Typing practice does not betray",
+  "We are programmer's eggs.",
+  "It is very important to keep document",
+  "Faster typing gives you time to think"
 ];
 
 let currentTextIndex;
@@ -116,7 +116,7 @@ function submit(accuracy) {
   document.getElementById('popup-acc').textContent = `${accuracy.toFixed(1)}%`;
   document.getElementById('overlay').style.display = 'flex';
   // Webhookにメッセージを送信
-  fetch(webhookURL, {
+  /*fetch(webhookURL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -129,5 +129,5 @@ function submit(accuracy) {
   })
   .catch(error => {
     console.error("エラーが発生しました:", error);
-  });
+  });*/
 }
